@@ -65,15 +65,13 @@ public class BSTPart2 {
         // main left subtree
         root. left = new Node(6);
         root. left. left = new Node(5);
-        root. left.right = new Node(20);
+        root. left. left. left = new Node(3);
+        // main right subtree
+        root.right = new Node(10);
+        root.right.right = new Node(11);
+        root.right.right.right = new Node(12);
 
-        root.right = new Node(60);
-        root.right.left = new Node(45);
-        root.right.right = new Node(70);
-        root.right.right. left = new Node(65);
-        root.right.right.right = new Node( 80);
-
-          // convert bst to B Bst
-//        System.out.println(bst.convert(root).data);
+        // convert bst to B Bst
+        System.out.println(bst.convert(root).data);
     }
 }
