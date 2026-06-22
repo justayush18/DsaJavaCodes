@@ -49,7 +49,6 @@ public class BSTPart2 {
         root = createBstH(ino, 0, ino.size()-1);
         return root;
     }
-
     public static void main(String[] args) {
         //int[] arr = {3, 5, 6, 8, 10, 11, 12};
         BSTPart2 bst = new BSTPart2();
@@ -73,5 +72,6 @@ public class BSTPart2 {
 
         // convert bst to B Bst
         System.out.println(bst.convert(root).data);
+
     }
 }
