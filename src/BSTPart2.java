@@ -60,8 +60,10 @@ public class BSTPart2 {
         //Node root = bst.createBst(arr, 0, arr.length-1);
         //bst.preOrder(root);
 
-        Node root = new Node(50);
-        root. left = new Node(30);
+        // root
+        Node root = new Node(8);
+        // main left subtree
+        root. left = new Node(6);
         root. left. left = new Node(5);
         root. left.right = new Node(20);
 
