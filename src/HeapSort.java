@@ -6,7 +6,7 @@ public class HeapSort {
         int maxIdx = i;
 
         if (left < size  && arr[left] > arr[maxIdx]){
-            // when you want dscending order apply < in this both if.
+            // when you want descending order apply < in this both if.
             maxIdx = left;
         }
         if (right < size && arr[right] > arr[maxIdx]){
