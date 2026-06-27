@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Set;
+import java.util.*;
 
 public class HMImplementation {
     static class HashMap<K, V> { // generic <k, v>
@@ -41,7 +38,7 @@ public class HMImplementation {
             int di = 0;
             for (int i = 0; i < ll.size(); i++) {
                 Node n = ll.get(i);
-                if (n.key == key) {
+                if (Objects.equals(n.key, key)) {
                     return di;
                 }
                 di++;
@@ -76,10 +73,12 @@ public class HMImplementation {
             for (int i = 0; i < N; i++) {
                 buket[i] = new LinkedList<>();
             }
+            n = 0; //  Reset the total size
+
             for (int i = 0; i < old.length; i++) {
                 LinkedList<Node> ll = old[i];
-                for (int j = 0; j < ll.size(); j++) {
-                    Node node = ll.remove(j);
+                while (!ll.isEmpty()) {
+                    Node node = ll.remove();
                     put(node.key, node.val);
                 }
             }
