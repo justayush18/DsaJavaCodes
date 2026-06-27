@@ -134,10 +134,10 @@ public class HMImplementation {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("India", 883);
-        map.put("China", 883);
-        map.put("Italy", 883);
-        map.put("Pakistan", 883);
-        map.put("Europe", 89);
+        map.put("China", 306);
+        map.put("Italy", 787);
+        map.put("Pakistan", 282);
+        map.put("Europe", 57);
 
         // tried out all function with sout
 
